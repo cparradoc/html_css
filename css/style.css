@@ -1,4 +1,11 @@
 /* Reglas por defecto (mobile) */
+.header {
+    background-color: #ed1c24;
+}
+.header__logo {
+    height: 40px;
+}
+
 p {
     font-size: 12px;
    }
@@ -6,28 +13,38 @@ p {
 /* Resto de reglas en orden creciente */
 @media (min-width: 576px) {
     p {
-        font-size: 14px;
+        font-size: 48px;
+    }
+
+    .header__logo {
+        height: 100px;
     }
 }
 @media (min-width: 768px) {
     p {
         font-size: 16px;
     }
+
+    .header__logo {
+        height: 64px;
+    }
 }
 @media (min-width: 992px) {
     p {
         font-size: 20px;
+    }
+
+    .header__logo {
+        height: 83px;
     }
 }
 @media (min-width: 1200px) {
     p {
         font-size: 24px;
     }
+
+    .header__logo {
+        height: 100px;
+    }
 }
 
-.header {
-    background-color: #ed1c24;
-}
-.header__logo {
-
-}
