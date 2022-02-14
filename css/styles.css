@@ -1,11 +1,10 @@
 header {
-  position: fixed;
+  position: relative;
   width: 100%;
   background: #ed1c24;
 }
 
 nav {
-  margin-top: 80px;
   position: fixed;
   width: 200px;
   left: 0px;
@@ -201,18 +200,5 @@ p {
   color: white;
   text-align: right;
   padding-right: 2px;
-}
-
-@font-face {
-  font-family: "Font Awesome 5 Free";
-  src: url(../webfonts/fa-solid-900.eot);
-}
-
-.fa {
-  font-family: "Font Awesome 5 Free";
-}
-
-.fa-star:before {
-  content: "\f005";
 }
 /*# sourceMappingURL=styles.css.map */
