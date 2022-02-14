@@ -1,0 +1,108 @@
+
+.header {
+  background-color: #ed1c24;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__logo {
+  height: 40px;
+}
+
+p {
+  font-size: 12px;
+}
+
+/* Resto de reglas en orden creciente */
+@media (min-width: 576px) {
+  p {
+    font-size: 48px;
+  }
+  .header__logo {
+    height: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+  .header__logo {
+    height: 64px;
+  }
+}
+
+@media (min-width: 992px) {
+  p {
+    font-size: 20px;
+  }
+  .header__logo {
+    height: 83px;
+  }
+}
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 24px;
+  }
+  .header__logo {
+    height: 100px;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #f4f4f4;
+}
+
+.anuncio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  height: 40px;
+}
+
+.anuncio__direct {
+  height: 40px;
+}
+
+.anuncio__pokemon {
+  height: 50px;
+}
+
+.anuncio__mario_kart {
+  height: 70px;
+}
+
+.aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: lightgreen;
+  width: 20%;
+}
+
+.aside__noticia {
+  height: 100px;
+}
+/*# sourceMappingURL=styles.css.map */
