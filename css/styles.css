@@ -5,13 +5,14 @@ header {
   display: flex;
 }
 
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.nav {
+  display: inline-block;
+  height: 100%;
+  left: 0px;
 }
 
 .menu {
+  height: 100%;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,7 +31,7 @@ nav {
   background-color: #ed1c24;
   color: white;
   text-decoration: none;
-  margin-bottom: 1px;
+  margin-bottom: 1.5px;
 }
 
 .header__logo {
@@ -42,14 +43,18 @@ p {
 }
 
 .container {
+  margin-left: 300px;
+  width: 80%;
+  max-width: 1800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1800px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: start;
@@ -68,11 +73,11 @@ p {
 }
 
 .anuncio__direct {
-  height: 80px;
+  height: 70px;
 }
 
 .anuncio__pokemon {
-  height: 80px;
+  height: 70px;
 }
 
 .anuncio__mario_kart {
@@ -178,6 +183,7 @@ p {
 
 footer {
   background-color: #ed1c24;
+  position: relative;
 }
 
 /*.footer_header {
