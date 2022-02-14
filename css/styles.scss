@@ -64,7 +64,7 @@ p {
     }
 
     .header__logo {
-        height: 100px;
+        height: 54px;
     }
 
     .anuncio__direct {
@@ -149,5 +149,13 @@ p {
     .anuncio__mario_kart {
         height: 110px;
     }
+}
+
+footer {
+    background-color: $primary-color;
+}
+
+.footer_header__logo {
+    height: 20px;
 }
 
