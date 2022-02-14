@@ -55,8 +55,9 @@ p {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -64,9 +65,7 @@ p {
 }
 
 .anuncio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -ms-flex-preferred-size: 20%;
       flex-basis: 20%;
   margin: 10px 20px;
@@ -200,5 +199,24 @@ p {
   color: white;
   text-align: right;
   padding-right: 2px;
+}
+
+@font-face {
+  font-family: "Font Awesome 6 Free";
+  src: url(fontawesome-free-6.0.0-web\fontawesome-free-6.0.0-web\webfonts\fa-solid-900.woff2);
+}
+
+.fa {
+  font-family: "Font Awesome 6 Free";
+}
+
+.fa-star::before {
+  font: var(--fa-font-solid);
+  content: "\f005";
+}
+
+.fa-shopping-bag::before {
+  font: var(--fa-font-solid);
+  content: "\f290";
 }
 /*# sourceMappingURL=styles.css.map */
