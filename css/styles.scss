@@ -1,3 +1,4 @@
+
 $primary-color: #ed1c24;
 $news-height: 100px;
 
@@ -17,48 +18,11 @@ $news-height: 100px;
 p {
     font-size: 12px;
    }
-   
-/* Resto de reglas en orden creciente */
-@media (min-width: 576px) {
-    p {
-        font-size: 48px;
-    }
-
-    .header__logo {
-        height: 100px;
-    }
-}
-@media (min-width: 768px) {
-    p {
-        font-size: 16px;
-    }
-
-    .header__logo {
-        height: 64px;
-    }
-}
-@media (min-width: 992px) {
-    p {
-        font-size: 20px;
-    }
-
-    .header__logo {
-        height: 83px;
-    }
-}
-@media (min-width: 1200px) {
-    p {
-        font-size: 24px;
-    }
-
-    .header__logo {
-        height: 100px;
-    }
-}
 
 .container {
     display: flex;
-    flex-direction: row;
+    max-width: 1800px;
+    flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
     background-color: #f4f4f4;
@@ -67,15 +31,16 @@ p {
 .anuncio {
     display: flex;
     flex-basis: 20%;
-    height: 40px;
+    margin: 10px 20px;
+    //width: 20%;
 }
 
 .anuncio__direct {
-    height: 40px;
+    height: 80px;
 }
 
 .anuncio__pokemon {
-    height: 50px;
+    height: 80px;
 }
 
 .anuncio__mario_kart {
@@ -91,3 +56,98 @@ p {
 .aside__noticia {
     height: $news-height;
 }
+   
+/* Resto de reglas en orden creciente */
+@media (min-width: 576px) {
+    p {
+        font-size: 48px;
+    }
+
+    .header__logo {
+        height: 100px;
+    }
+
+    .anuncio__direct {
+        height: 120px;
+    }
+    
+    .anuncio__pokemon {
+        height: 120px;
+    }
+    
+    .anuncio__mario_kart {
+        height: 120px;
+    }
+}
+@media (min-width: 768px) {
+    p {
+        font-size: 16px;
+    }
+
+    .header__logo {
+        height: 64px;
+    }
+
+    .anuncio__direct {
+        height: 130px;
+    }
+    
+    .anuncio__pokemon {
+        height: 130px;
+    }
+    
+    .anuncio__mario_kart {
+        height: 130px;
+    }
+}
+@media (min-width: 992px) {
+    p {
+        font-size: 20px;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .header__logo {
+        height: 83px;
+    }
+
+    .anuncio__direct {
+        height: 140px;
+    }
+    
+    .anuncio__pokemon {
+        height: 140px;
+    }
+    
+    .anuncio__mario_kart {
+        height: 140px;
+    }
+}
+@media (min-width: 1200px) {
+    p {
+        font-size: 24px;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .header__logo {
+        height: 100px;
+    }
+
+    .anuncio__direct {
+        height: 110px;
+    }
+    
+    .anuncio__pokemon {
+        height: 110px;
+    }
+    
+    .anuncio__mario_kart {
+        height: 110px;
+    }
+}
+
