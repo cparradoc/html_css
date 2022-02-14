@@ -1,0 +1,93 @@
+$primary-color: #ed1c24;
+$news-height: 100px;
+
+.header {
+    background-color: $primary-color;
+    display: flex;
+}
+
+.footer {
+    display: flex;
+}
+
+.header__logo {
+    height: 40px;
+}
+
+p {
+    font-size: 12px;
+   }
+   
+/* Resto de reglas en orden creciente */
+@media (min-width: 576px) {
+    p {
+        font-size: 48px;
+    }
+
+    .header__logo {
+        height: 100px;
+    }
+}
+@media (min-width: 768px) {
+    p {
+        font-size: 16px;
+    }
+
+    .header__logo {
+        height: 64px;
+    }
+}
+@media (min-width: 992px) {
+    p {
+        font-size: 20px;
+    }
+
+    .header__logo {
+        height: 83px;
+    }
+}
+@media (min-width: 1200px) {
+    p {
+        font-size: 24px;
+    }
+
+    .header__logo {
+        height: 100px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #f4f4f4;
+}
+
+.anuncio {
+    display: flex;
+    flex-basis: 20%;
+    height: 40px;
+}
+
+.anuncio__direct {
+    height: 40px;
+}
+
+.anuncio__pokemon {
+    height: 50px;
+}
+
+.anuncio__mario_kart {
+    height: 70px;
+}
+
+.aside {
+    display: flex;
+    background: lightgreen;
+    width: 20%;
+}
+
+.aside__noticia {
+    height: $news-height;
+}
