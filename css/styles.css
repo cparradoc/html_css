@@ -1,14 +1,36 @@
-.header {
+header {
   background-color: #ed1c24;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.menu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu__item {
+  display: block;
+  width: 100px;
+  text-align: center;
+  padding: 20px;
+  background-color: #ed1c24;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 1px;
 }
 
 .header__logo {
@@ -158,6 +180,9 @@ footer {
   background-color: #ed1c24;
 }
 
+/*.footer_header {
+    display: flex;
+}*/
 .footer_header__logo {
   height: 20px;
 }
@@ -166,5 +191,19 @@ footer {
   font-size: 15px;
   color: white;
   text-align: right;
+  padding-right: 2px;
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  src: url(../webfonts/fa-solid-900.eot);
+}
+
+.fa {
+  font-family: "Font Awesome 5 Free";
+}
+
+.fa-star:before {
+  content: "\f005";
 }
 /*# sourceMappingURL=styles.css.map */

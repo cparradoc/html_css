@@ -2,14 +2,32 @@
 $primary-color: #ed1c24;
 $news-height: 100px;
 
-.header {
+header {
     background-color: $primary-color;
     display: flex;
 }
 
-.footer {
-    display: flex;
+nav {
+    display:flex;
 }
+
+.menu {
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+}
+
+.menu__item {
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding: 20px;
+    background-color: $primary-color;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1px;
+}
+
 
 .header__logo {
     height: 40px;
@@ -155,6 +173,10 @@ footer {
     background-color: $primary-color;
 }
 
+/*.footer_header {
+    display: flex;
+}*/
+
 .footer_header__logo {
     height: 20px;
 }
@@ -163,5 +185,20 @@ footer {
     font-size: 15px;
     color: white;
     text-align: right;
+    padding-right: 2px;
 }
 
+
+
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    src: url(../webfonts/fa-solid-900.eot);
+ }
+ .fa {
+    font-family: "Font Awesome 5 Free"
+ }
+
+ .fa-star:before {
+    content: "\f005"
+    
+ }
