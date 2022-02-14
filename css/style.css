@@ -1,9 +1,39 @@
 /* Reglas por defecto (mobile) */
 .header {
     background-color: #ed1c24;
+    display: flex;
 }
+
+.footer {
+    display: flex;
+}
+
 .header__logo {
     height: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #f4f4f4;
+}
+
+.anuncio {
+    
+}
+
+.anuncio__direct {
+    height: 40px;
+}
+
+.anuncio__pokemon {
+    height: 50px;
+}
+
+.anuncio__mario_kart {
+    height: 70px;
 }
 
 p {
